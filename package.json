@@ -7,10 +7,8 @@
     "init": "mkdir dist",
     "clean": "rm -rf dist",
     "prebuild": "npm run clean && npm run init",
-    "build:single": "babel ./src/index.js -o ./dist/index.js --presets es2015",
     "build": "babel ./src -d ./dist --ignore test.js",
-    "test": "jest",
-    "test:single": "mocha --compiler js:babel-core"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
