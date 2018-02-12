@@ -1,0 +1,43 @@
+{
+  "name": "doll",
+  "version": "1.0.0",
+  "description": "Doll is an open-source library that can recognize gestures and normalize them for motion purpose",
+  "main": "index.js",
+  "scripts": {
+    "init": "mkdir dist",
+    "clean": "rm -rf dist",
+    "prebuild": "npm run clean && npm run init",
+    "build:single": "babel ./src/index.js -o ./dist/index.js --presets es2015",
+    "build": "babel ./src -d ./dist --ignore test.js",
+    "test": "jest",
+    "test:single": "mocha --compiler js:babel-core"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trinketmage/doll.git"
+  },
+  "keywords": [
+    "motion",
+    "gesture",
+    "mousemove",
+    "animation",
+    "angle",
+    "pythagore",
+    "thales"
+  ],
+  "author": "tranremi@live.fr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trinketmage/doll/issues"
+  },
+  "homepage": "https://github.com/trinketmage/doll#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.2.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "jest": "^22.2.2",
+    "regenerator-runtime": "^0.11.1"
+  }
+}
