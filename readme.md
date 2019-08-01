@@ -2,7 +2,7 @@
 
 It's dangerous to go alone! Take this.
 
-[![It's dangerous to go alone! Take this.](https://raw.githubusercontent.com/trinketmage/trinketmage.github.io/master/static/its_dangerous_to_go_alone-zac_gorman.webp)](https://magicalgametime.com/image/48470399171)
+[![It's dangerous to go alone! Take this.](https://raw.githubusercontent.com/trinketmage/trinketmage.github.io/master/static/its_dangerous_to_go_alone-zac_gorman.webp)](https://magicalgametime.com/post/48470399171)
 
 ## Roadmap
 
