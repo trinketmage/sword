@@ -1,4 +1,4 @@
-# unamed-old-man.js
+# sword.js
 
 It's dangerous to go alone! Take this.
 
