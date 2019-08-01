@@ -2,7 +2,7 @@
 
 It's dangerous to go alone! Take this.
 
-[![It's dangerous to go alone! Take this.](https://pasteboard.co/IqECwyBg.webp)](https://magicalgametime.com/image/48470399171)
+[![It's dangerous to go alone! Take this.](blob:https://pasteboard.co/a0642a0e-a528-4889-859f-c3db075a15a9)](https://magicalgametime.com/image/48470399171)
 
 ## Roadmap
 
