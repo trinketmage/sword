@@ -1,11 +1,11 @@
 {
   "name": "@trinketmage/sword",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Javascript animation hero helpers kit",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-		"build": "webpack"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
