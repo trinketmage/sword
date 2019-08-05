@@ -6,6 +6,7 @@
   <a href="https://github.com/trinketmage/sword/issues"><img src="https://img.shields.io/github/issues/trinketmage/sword" alt="Issues"></a>
 </p>
 It's dangerous to go alone! Take this.<br/>
+
 [![It's dangerous to go alone! Take this.](https://raw.githubusercontent.com/trinketmage/trinketmage.github.io/master/static/its_dangerous_to_go_alone-zac_gorman.webp)](https://magicalgametime.com/post/48470399171)
 
 ## Getting started
