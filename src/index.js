@@ -1,5 +1,5 @@
 import {
-	Lerp
+	lerp
 } from './Math/Lerp';
 import {
 	vectorToAngle,
@@ -7,7 +7,7 @@ import {
 } from './Math/Trigonometry';
 
 export {
-	Lerp,
+	lerp,
 	vectorToAngle,
 	angleToVector
 }
