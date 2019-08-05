@@ -1,2 +1,13 @@
+import {
+	Lerp
+} from './Math/Lerp';
+import {
+	vectorToAngle,
+	angleToVector
+} from './Math/Trigonometry';
 
-export * from './mousemove';
+export {
+	Lerp,
+	vectorToAngle,
+	angleToVector
+}
