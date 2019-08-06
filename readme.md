@@ -19,7 +19,7 @@ npm i --save @trinketmage/sword
 
 - **lerp**: Linear interpolation.
 - **angleToVector**: Calculate a 2d vector on unit circle from an angle in degree.
-- **angleToVector**: Calculate an angle in degree from a 2d vector (or two 2d vectors).
+- **vectorToAngle**: Calculate an angle in degree from a 2d vector (or two 2d vectors).
 
 <p>
   <a href="https://twitter.com/uwutrinket"><img src="https://img.shields.io/twitter/follow/uwutrinket?style=social" alt="Twitter"></a>
