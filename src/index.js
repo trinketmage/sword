@@ -7,3 +7,7 @@ export {
 	angleToVector
 }
 from './Math/Trigonometry';
+import VirtualScroll from './Gesture/VirtualScroll';
+export {
+	VirtualScroll
+}

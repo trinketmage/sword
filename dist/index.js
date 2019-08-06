@@ -96,6 +96,19 @@ return /******/ (function(modules) { // webpackBootstrap
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/Gesture/VirtualScroll.js":
+/*!**************************************!*\
+  !*** ./src/Gesture/VirtualScroll.js ***!
+  \**************************************/
+/*! exports provided: default */
+/*! exports used: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"a\", function() { return Scroll; });\n/* harmony import */ var _Math_Lerp__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../Math/Lerp */ \"./src/Math/Lerp.js\");\n\nclass Scroll {\n    constructor() {\n        this.settings = {\n            wrapperSpeed: 0.16,\n            targetSpeed: 0.02,\n            targetPercentage: 0.1\n        }\n        this.wapperOffset = 0;\n        this.windowHeight = 0;\n        this.scrollTop = 0;\n    }\n    init({\n        container\n    }) {\n        this.wrapper = container\n        this.wrapper.style.position = 'fixed'\n        this.wrapper.style.width = '100%'\n        this.wrapper.style.height = 'auto'\n        this.resize();\n        this.animate();\n    }\n    render() {\n        this.scrollTop = document.documentElement.scrollTop || document.body.scrollTop;\n        this.wrapperUpdate()\n    }\n    animate() {\n        this.render();\n        this.scrollId = requestAnimationFrame(this.animate.bind(this));\n    }\n    wrapperUpdate() {\n        const oldY = this.wapperOffset\n        this.wapperOffset = Object(_Math_Lerp__WEBPACK_IMPORTED_MODULE_0__[/* lerp */ \"a\"])(this.wapperOffset, this.scrollTop, this.settings.wrapperSpeed);\n        const direction = oldY >= this.wapperOffset\n        this.wrapper.style.transform = 'translate3d(' + 0 + ',' + Math.round(-this.wapperOffset * 100) / 100 + 'px ,' + 0 + ')';\n    }\n    lockScreen() {\n        this.windowHeight = window.innerHeight;\n        document.body.style.height = this.windowHeight + 'px';\n    }\n    update(resetScroll = true) {\n        document.body.style.height = this.wrapper.clientHeight + 'px';\n        if (resetScroll) {\n            window.scroll(0, 0)\n            this.scrollTop = 0\n            this.wapperOffset = 0\n        }\n    }\n    resize() {\n        this.update()\n        this.windowHeight = window.innerHeight;\n    }\n}\n\n\n//# sourceURL=webpack://sword/./src/Gesture/VirtualScroll.js?");
+
+/***/ }),
+
 /***/ "./src/Math/Lerp.js":
 /*!**************************!*\
   !*** ./src/Math/Lerp.js ***!
@@ -126,12 +139,12 @@ eval("/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, 
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! exports provided: lerp, vectorToAngle, angleToVector */
+/*! exports provided: lerp, vectorToAngle, angleToVector, VirtualScroll */
 /*! all exports used */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Math_Lerp__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Math/Lerp */ \"./src/Math/Lerp.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"lerp\", function() { return _Math_Lerp__WEBPACK_IMPORTED_MODULE_0__[\"a\"]; });\n\n/* harmony import */ var _Math_Trigonometry__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Math/Trigonometry */ \"./src/Math/Trigonometry.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"vectorToAngle\", function() { return _Math_Trigonometry__WEBPACK_IMPORTED_MODULE_1__[\"b\"]; });\n\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"angleToVector\", function() { return _Math_Trigonometry__WEBPACK_IMPORTED_MODULE_1__[\"a\"]; });\n\n\n\n\n//# sourceURL=webpack://sword/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Math_Lerp__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Math/Lerp */ \"./src/Math/Lerp.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"lerp\", function() { return _Math_Lerp__WEBPACK_IMPORTED_MODULE_0__[\"a\"]; });\n\n/* harmony import */ var _Math_Trigonometry__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Math/Trigonometry */ \"./src/Math/Trigonometry.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"vectorToAngle\", function() { return _Math_Trigonometry__WEBPACK_IMPORTED_MODULE_1__[\"b\"]; });\n\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"angleToVector\", function() { return _Math_Trigonometry__WEBPACK_IMPORTED_MODULE_1__[\"a\"]; });\n\n/* harmony import */ var _Gesture_VirtualScroll__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Gesture/VirtualScroll */ \"./src/Gesture/VirtualScroll.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"VirtualScroll\", function() { return _Gesture_VirtualScroll__WEBPACK_IMPORTED_MODULE_2__[\"a\"]; });\n\n\n\n\n\n\n\n//# sourceURL=webpack://sword/./src/index.js?");
 
 /***/ })
 
