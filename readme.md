@@ -1,7 +1,7 @@
 # sword.js
 
 
-<p align="center">
+<p>
   <a href="https://www.npmjs.com/package/@trinketmage/sword"><img src="https://img.shields.io/npm/v/@trinketmage/sword" alt="Version"></a>
   <a href="https://www.npmjs.com/package/@trinketmage/sword"><img src="https://img.shields.io/npm/dy/@trinketmage/sword" alt="Downloads"></a>
   <a href="https://github.com/trinketmage/sword/issues"><img src="https://img.shields.io/github/issues/trinketmage/sword" alt="Issues"></a>
@@ -21,6 +21,6 @@ npm i --save @trinketmage/sword
 - **angleToVector**: Calculate a 2d vector on unit circle from an angle in degree.
 - **angleToVector**: Calculate an angle in degree from a 2d vector (or two 2d vectors).
 
-<p align="center">
+<p>
   <a href="https://twitter.com/uwutrinket"><img src="https://img.shields.io/twitter/follow/uwutrinket?style=social" alt="Twitter"></a>
 </p>
