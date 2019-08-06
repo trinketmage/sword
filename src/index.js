@@ -1,13 +1,9 @@
-import {
-	lerp
-} from './Math/Lerp';
-import {
-	vectorToAngle,
-	angleToVector
-} from './Math/Trigonometry';
-
 export {
-	lerp,
+	lerp
+}
+from './Math/Lerp';
+export {
 	vectorToAngle,
 	angleToVector
 }
+from './Math/Trigonometry';

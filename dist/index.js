@@ -100,12 +100,12 @@ return /******/ (function(modules) { // webpackBootstrap
 /*!**************************!*\
   !*** ./src/Math/Lerp.js ***!
   \**************************/
-/*! exports provided: Lerp */
-/*! exports used: Lerp */
+/*! exports provided: lerp */
+/*! exports used: lerp */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"a\", function() { return Lerp; });\n// Precise method. Source: https://en.wikipedia.org/wiki/Linear_interpolation\nfunction Lerp(v0, v1, t) {\n\treturn (1 - t) * v0 + t * v1\n}\n\n//# sourceURL=webpack://sword/./src/Math/Lerp.js?");
+eval("/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"a\", function() { return lerp; });\n// Precise method. Source: https://en.wikipedia.org/wiki/Linear_interpolation\nfunction lerp(v0, v1, t) {\n\treturn (1 - t) * v0 + t * v1\n}\n\n//# sourceURL=webpack://sword/./src/Math/Lerp.js?");
 
 /***/ }),
 
@@ -126,12 +126,12 @@ eval("/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, 
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! exports provided: Lerp, vectorToAngle, angleToVector */
+/*! exports provided: lerp, vectorToAngle, angleToVector */
 /*! all exports used */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Math_Lerp__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Math/Lerp */ \"./src/Math/Lerp.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"Lerp\", function() { return _Math_Lerp__WEBPACK_IMPORTED_MODULE_0__[\"a\"]; });\n\n/* harmony import */ var _Math_Trigonometry__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Math/Trigonometry */ \"./src/Math/Trigonometry.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"vectorToAngle\", function() { return _Math_Trigonometry__WEBPACK_IMPORTED_MODULE_1__[\"b\"]; });\n\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"angleToVector\", function() { return _Math_Trigonometry__WEBPACK_IMPORTED_MODULE_1__[\"a\"]; });\n\n\n\n\n\n\n//# sourceURL=webpack://sword/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Math_Lerp__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Math/Lerp */ \"./src/Math/Lerp.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"lerp\", function() { return _Math_Lerp__WEBPACK_IMPORTED_MODULE_0__[\"a\"]; });\n\n/* harmony import */ var _Math_Trigonometry__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Math/Trigonometry */ \"./src/Math/Trigonometry.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"vectorToAngle\", function() { return _Math_Trigonometry__WEBPACK_IMPORTED_MODULE_1__[\"b\"]; });\n\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"angleToVector\", function() { return _Math_Trigonometry__WEBPACK_IMPORTED_MODULE_1__[\"a\"]; });\n\n\n\n\n//# sourceURL=webpack://sword/./src/index.js?");
 
 /***/ })
 
