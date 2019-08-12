@@ -7,6 +7,11 @@ export {
 	angleToVector
 }
 from './Math/Trigonometry';
+export {
+	getScreenPos,
+	getFovHeigth
+}
+from './3d';
 import VirtualScroll from './Gesture/VirtualScroll';
 export {
 	VirtualScroll
