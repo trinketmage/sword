@@ -12,7 +12,9 @@ export {
 	getFovHeigth
 }
 from './3d';
+import Clock from './Core/Clock';
 import VirtualScroll from './Gesture/VirtualScroll';
 export {
+	Clock,
 	VirtualScroll
 }
