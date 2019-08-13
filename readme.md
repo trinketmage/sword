@@ -27,6 +27,10 @@ npm i --save @trinketmage/sword
 ## Gesture
 - **VirtualScroll**: Custom scroll handle for inertia.
 
+## 3d
+- **getScreenPos**: Screen position (2d vector) of position (3d vector).
+- **getFovHeigth**: Get height of frustrum (y) at a specific depth (z).
+
 <p>
   <a href="https://twitter.com/uwutrinket"><img src="https://img.shields.io/twitter/follow/uwutrinket?style=social" alt="Twitter"></a>
 </p>
