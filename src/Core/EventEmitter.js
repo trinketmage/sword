@@ -33,18 +33,23 @@ export default class {
 			const name = that.resolveName(_name)
 
 			// Create namespace if not exist
-			if (!(that.callbacks[name.namespace] instanceof Object))
+			if (!(that.callbacks[name.namespace] instanceof Object)) {
 				that.callbacks[name.namespace] = {}
+			}
 
 			// Create callback if not exist
-			if (!(that.callbacks[name.namespace][name.value] instanceof Array))
+			if (!(that.callbacks[name.namespace][name.value] instanceof Array)) {
 				that.callbacks[name.namespace][name.value] = []
+			}
 
 			// Add callback
 			that.callbacks[name.namespace][name.value].push(callback)
 		})
 
-		return this
+		// return that.callbacks['base']
+		return function() {
+			that.callbacks['base'][_names] = that.callbacks['base'][_names].filter(_ => _.name !== callback.name)
+		}
 	}
 
 	/**
