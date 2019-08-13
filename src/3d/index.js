@@ -1,10 +1,12 @@
 export function getScreenPos(mesh, sizes, camera, vector3) {
-	var widthHalf = 0.5 * sizes.viewport.width;
-	var heightHalf = 0.5 * sizes.viewport.height;
+	const {
+		halfWidth,
+		halfHeight
+	} = sizes.viewport;
 	vector3.setFromMatrixPosition(mesh.matrixWorld);
 	vector3.project(camera);
-	vector3.x = Math.round(((vector3.x * widthHalf) + widthHalf) * 100) / 100;
-	vector3.y = Math.round((-(vector3.y * heightHalf) + heightHalf) * 100) / 100;
+	vector3.x = Math.round(((vector3.x * halfWidth) + halfWidth) * 100) / 100;
+	vector3.y = Math.round((-(vector3.y * halfHeight) + halfHeight) * 100) / 100;
 	return {
 		x: vector3.x,
 		y: vector3.y
