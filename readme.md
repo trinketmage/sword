@@ -32,7 +32,7 @@ npm i --save @trinketmage/sword
 - **getFovHeigth**: Get height of frustrum (y) at a specific depth (z).
 
 ## glsl
-- **stagger**: glsl implementaiton of [staggers](https://greensock.com/docs/v3/Staggers)
+- **stagger**: glsl implementation of [staggers](https://greensock.com/docs/v3/Staggers)
 ``` glsl
 #pragma glslify: stagger = require(@trinketmage/sword/src/glsl/stagger)
 ```
