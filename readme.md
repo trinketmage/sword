@@ -8,7 +8,7 @@
 </p>
 It's dangerous to go alone! Take this.
 
-[![It's dangerous to go alone! Take this.](https://64.media.tumblr.com/73ad3d3cbbf91efea40773bd6f1f1e72/tumblr_mlkpzij6T81qizbpto1_1280.gifv)](https://magicalgametime.com/post/48470399171)
+[![It's dangerous to go alone! Take this.](https://www.zeldadungeon.net/wp-content/uploads/2013/04/tumblr_mlkpzij6T81qizbpto1_1280.gif)](https://magicalgametime.com/post/48470399171)
 
 ## Getting started
 ```
