@@ -31,6 +31,16 @@ npm i --save @trinketmage/sword
 - **getScreenPos**: Screen position (2d vector) of position (3d vector).
 - **getFovHeigth**: Get height of frustrum (y) at a specific depth (z).
 
+## glsl
+- **stagger**: glsl implementation of [staggers](https://greensock.com/docs/v3/Staggers)
+``` glsl
+#pragma glslify: stagger = require(@trinketmage/sword/src/glsl/stagger)
+```
+- **backgroundCover**: glsl UV calculation for background cover for fullscreen texture
+``` glsl
+#pragma glslify: backgroundCover = require(@trinketmage/sword/src/glsl/backgroundCover)
+```
+
 <p>
   <a href="https://twitter.com/uwutrinket"><img src="https://img.shields.io/twitter/follow/uwutrinket?style=social" alt="Twitter"></a>
 </p>
