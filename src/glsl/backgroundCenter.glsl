@@ -5,5 +5,5 @@ vec2 backgroundCenter(vec2 uv, vec2 res, float diffuseAspect) {
     return = (uv) * (resp) + ((1.0 - resp) * 0.5);
 }
 
-#pragma glslify: export(responsive)
+#pragma glslify: export(backgroundCenter)
 
