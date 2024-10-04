@@ -5,9 +5,9 @@ import {
     sin,
 } from 'three/tsl';
 
-export var rotate2d = Fn((params) => {
+export var rotate2d = Fn(([ angle ]) => {
     return mat2(
-        cos(params.angle), sin(params.angle).mul(-1),
-        sin(params.angle), cos(params.angle),
+        cos(angle), sin(angle).mul(-1),
+        sin(angle), cos(angle),
     );
 });
