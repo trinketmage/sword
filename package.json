@@ -4,6 +4,7 @@
   "description": "Javascript animation hero helpers kit",
   "main": "src/index.js",
   "exports": {
+    ".": "./src/index.js",
     "./tsl": "./src/tsl/index.js"
   },
   "scripts": {
