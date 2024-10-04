@@ -14,7 +14,9 @@ export {
 from './3d';
 import Clock from './Core/Clock';
 import VirtualScroll from './Gesture/VirtualScroll';
+import * as tsl from './tsl';
 export {
 	Clock,
-	VirtualScroll
+	VirtualScroll,
+	tsl
 }
