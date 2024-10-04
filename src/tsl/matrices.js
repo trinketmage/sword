@@ -1,5 +1,6 @@
 import {
     Fn,
+    mat2,
     cos,
     sin,
 } from 'three/tsl';
