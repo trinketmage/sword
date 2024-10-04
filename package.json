@@ -1,6 +1,6 @@
 {
   "name": "@trinketmage/sword",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Javascript animation hero helpers kit",
   "main": "src/index.js",
   "exports": {
