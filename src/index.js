@@ -14,7 +14,5 @@ export {
 from './3d';
 import * as tsl from './tsl';
 export {
-	Clock,
-	VirtualScroll,
 	tsl
 }
