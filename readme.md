@@ -15,9 +15,6 @@ It's dangerous to go alone! Take this.
 npm i --save @trinketmage/sword
 ```
 
-## Core
-- **Clock**: Object to handle a single render loop with RequestAnimationFrame and keep track of time.
-
 ## Mathematics
 
 - **lerp**: Linear interpolation.
