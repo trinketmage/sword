@@ -21,9 +21,6 @@ npm i --save @trinketmage/sword
 - **angleToVector**: Calculate a 2d vector on unit circle from an angle in degree.
 - **vectorToAngle**: Calculate an angle in degree from a 2d vector (with optional pivot).
 
-## Gesture
-- **VirtualScroll**: Custom scroll handle for inertia.
-
 ## 3d
 - **getScreenPos**: Screen position (2d vector) of position (3d vector).
 - **getFovHeigth**: Get height of frustrum (y) at a specific depth (z).

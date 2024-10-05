@@ -12,7 +12,6 @@ export {
 	getFovHeigth
 }
 from './3d';
-import VirtualScroll from './Gesture/VirtualScroll';
 import * as tsl from './tsl';
 export {
 	Clock,
