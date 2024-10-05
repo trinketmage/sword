@@ -2,6 +2,7 @@ import {
     Fn,
     mix,
     step,
+    vec2,
     reciprocal,
 } from 'three/tsl';
 
