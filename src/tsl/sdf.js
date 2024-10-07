@@ -6,7 +6,12 @@ import {
     max,
     select,
     vec4,
+    fwidth,
+    clamp,
+    texture,
 } from 'three/tsl';
+
+import { median } from './math';
 
 export var sdBox = Fn(([st, b]) => {
     const d = abs(st).sub(b);
@@ -23,4 +28,12 @@ export const sdRoundedBox = Fn(([st, b, r = vec4(0.)]) => {
 
 export var sdCircle = Fn(([st, radius]) => {
     return length(st).sub(radius);
+});
+
+export var sdGlyph = Fn((map, uv) => {
+    var alpha = 1.0;
+    var msd = texture(map, uv);
+    var sd = median(msd.r, msd.g, msd.b) - 0.5;
+    alpha *= clamp(sd / fwidth(sd) + 0.5, 0.0, 1.0);
+    return alpha;
 });
