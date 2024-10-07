@@ -31,7 +31,7 @@ export var sdCircle = Fn(([st, radius]) => {
 });
 
 export var sdGlyph = Fn((map, uv) => {
-    var msd = texture(map, uv);
-    var sd = median(msd.r, msd.g, msd.b).sub(0.5);
-    return clamp(sd.div(fwidth(sd).add(0.5)), 0.0, 1.0);
+    var sample = texture(map, uv);
+    var sd = median(sample.r, sample.g, sample.b).sub(0.5);
+    return clamp(sd.div(fwidth(sd)).add(0.5), 0.0, 1.0);
 });
