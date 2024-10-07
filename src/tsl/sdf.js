@@ -5,6 +5,7 @@ import {
     min,
     max,
     select,
+    vec4,
 } from 'three/tsl';
 
 export var sdBox = Fn(([st, b]) => {
@@ -12,7 +13,7 @@ export var sdBox = Fn(([st, b]) => {
     return length(max(d, 0)).add(min(max(d.x, d.y), 0));
 });
 
-export const sdRoundedBox = Fn(([st, b, r]) => {
+export const sdRoundedBox = Fn(([st, b, r = vec4(0.)]) => {
     r = r.toVar();
     r.xy = select(st.x.greaterThan(0.0), r.xy, r.zw);
     r.y = select(st.y.greaterThan(0.0), r.x, r.y);
