@@ -30,8 +30,7 @@ export var sdCircle = Fn(([st, radius]) => {
     return length(st).sub(radius);
 });
 
-export var sdGlyph = Fn((map, uv) => {
-    var sample = texture(map, uv);
+export var sdGlyph = Fn(([sample]) => {
     var sd = median(sample.r, sample.g, sample.b).sub(0.5);
     return clamp(sd.div(fwidth(sd)).add(0.5), 0.0, 1.0);
 });
