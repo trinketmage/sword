@@ -49,7 +49,7 @@ let st = uv().mul(res).add(res.oneMinus().mul(0.5));
 - **sdBox** ..
 - **sdRoundedBox** ..
 - **sdCircle** ..
-- **sdGlyph** ..
+- **sdGlyph** render a glyph from a sdf/msdf texture
 ``` js
 // render a glyph from an msdf atlas
 // luv is local uv computed in geometry attribute
