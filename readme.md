@@ -35,6 +35,20 @@ npm i --save @trinketmage/sword
 #pragma glslify: backgroundCover = require(@trinketmage/sword/src/glsl/backgroundCover)
 ```
 
+## tsl
+- **rotate2d**: [rotate matrix2d](https://thebookofshaders.com/08/) (be mindful of [rotateUV](https://github.com/mrdoob/three.js/wiki/Three.js-Shading-Language#uv-utils))
+``` js
+const rotatedUV = rotate2d(rotation).mul(uv);
+```
+- **responsive**: homothetic helper to match two ratios
+``` js
+const responsive = responsive(ratio1, ratio2);
+```
+- **sdBox** ..
+- **sdRoundedBox** ..
+- **sdCircle** ..
+- **sdGlyph** ..
+
 <p>
-  <a href="https://twitter.com/uwutrinket"><img src="https://img.shields.io/twitter/follow/uwutrinket?style=social" alt="Twitter"></a>
+  <a href="https://twitter.com/uwutrinket"><img src="https://img.shields.io/twitter/follow/remuemeninge?style=social" alt="Twitter"></a>
 </p>
