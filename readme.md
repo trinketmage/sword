@@ -58,5 +58,5 @@ var alpha = sdGlyph(sample);
 ```
 
 <p>
-  <a href="https://twitter.com/uwutrinket"><img src="https://img.shields.io/twitter/follow/remuemeninge?style=social" alt="Twitter"></a>
+  <a href="https://twitter.com/remuemeninge"><img src="https://img.shields.io/twitter/follow/remuemeninge?style=social" alt="Twitter"></a>
 </p>
