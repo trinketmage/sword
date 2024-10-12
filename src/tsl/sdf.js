@@ -8,7 +8,6 @@ import {
     vec4,
     fwidth,
     clamp,
-    texture,
 } from 'three/tsl';
 
 import { median } from './math';
