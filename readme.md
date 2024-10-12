@@ -42,12 +42,20 @@ const rotatedUV = rotate2d(rotation).mul(uv);
 ```
 - **responsive**: homothetic helper to match two ratios
 ``` js
-const responsive = responsive(ratio1, ratio2);
+// example center an image
+const res = responsive(ratio1, ratio2);
+let st = uv().mul(res).add(res.oneMinus().mul(0.5));
 ```
 - **sdBox** ..
 - **sdRoundedBox** ..
 - **sdCircle** ..
 - **sdGlyph** ..
+``` js
+// render a glyph from an msdf atlas
+// luv is local uv computed in geometry attribute
+var sample = texture(atlas, luv);
+var alpha = sdGlyph(sample);
+```
 
 <p>
   <a href="https://twitter.com/uwutrinket"><img src="https://img.shields.io/twitter/follow/remuemeninge?style=social" alt="Twitter"></a>
