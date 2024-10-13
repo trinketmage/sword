@@ -52,6 +52,6 @@ export var xor = Fn(([s, t]) => {
 });
 
 // be mindful of https://github.com/mrdoob/three.js/blob/1886e4b91cdeb0b80cc5ed7d0e2a6dff58b5f544/src/nodes/math/OperatorNode.js#L281
-export var xor = Fn(([s]) => {
+export var not = Fn(([s]) => {
     return s.oneMinus();
 });

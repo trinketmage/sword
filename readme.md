@@ -36,16 +36,19 @@ npm i --save @trinketmage/sword
 ```
 
 ## tsl
+### matrices
 - **rotate2d**: [rotate matrix2d](https://thebookofshaders.com/08/) (be mindful of [rotateUV](https://github.com/mrdoob/three.js/wiki/Three.js-Shading-Language#uv-utils))
 ``` js
 const rotatedUV = rotate2d(rotation).mul(uv);
 ```
+### responsive
 - **responsive**: homothetic helper to match two ratios
 ``` js
 // example center an image
 const res = responsive(ratio1, ratio2);
 let st = uv().mul(res).add(res.oneMinus().mul(0.5));
 ```
+### sdf
 - **sdBox**: ..
 - **sdRoundedBox**: ..
 - **sdCircle**: ..
@@ -56,6 +59,16 @@ let st = uv().mul(res).add(res.oneMinus().mul(0.5));
 var sample = texture(atlas, luv);
 var alpha = sdGlyph(sample);
 ```
+### arithmetic operators (to avoid conditionals)
+- **notEqual**: ..
+- **greater**: ..
+- **lesser**: ..
+- **greaterEqual**: ..
+- **lesserEqual**: ..
+- **and**: ..
+- **or**: ..
+- **xor**: ..
+- **not**: ..
 
 <p>
   <a href="https://twitter.com/remuemeninge"><img src="https://img.shields.io/twitter/follow/remuemeninge?style=social" alt="Twitter"></a>
